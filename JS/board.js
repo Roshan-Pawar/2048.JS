@@ -1,7 +1,7 @@
-let board;
-let score = 0;
-const rows = 4;
-const columns = 4;
+export let board;
+export let score = 0;
+export const rows = 4;
+export const columns = 4;
 
 export function setGame() {
   board = [
@@ -76,6 +76,10 @@ export function updateScore() {
 
 export function getScore() {
   return score;
+}
+
+export function resetScore() {
+  score = 0; // Function to reset the score
 }
 
 export function addToScore(value) {

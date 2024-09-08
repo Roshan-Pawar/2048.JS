@@ -31,6 +31,86 @@ hr {
   align-items: center;
 }
 
+h1{
+    color: #776e65;
+    font-size: 60px;
+    margin: 15px;
+}
+
+h2{
+    color: #776e65;
+    font-size: 30px;
+    margin: 20px;
+}
+
+p{
+    color: #776e65;
+    font-size: larger;
+    text-align: center;
+}
+
+span{
+    font-weight: bolder;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#restartButton{
+    background: #8f7a66;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: #f9f6f2;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+    border: none;
+
+}
+
+/* popup window */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
 /* Tile Color */
 
 .x2 {

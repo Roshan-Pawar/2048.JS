@@ -26,7 +26,6 @@ export function setGame() {
 
 export function setTwo() {
   if (!hasEmptyTile()) {
-    console.log("Game over");
     return;
   }
 

@@ -11,19 +11,11 @@ import {
 import { slideLeft, slideRight, slideUp, slideDown } from "./slide.js";
 
 window.onload = function () {
-  // Show the modal
   const modal = document.getElementById("instructionsModal");
   const closeButton = document.getElementById("closeModal");
   const spanClose = document.querySelector(".close-btn");
 
-  // Display the modal when the page is loaded
   modal.style.display = "block";
-
-  // Close the modal when the user clicks "Got it!" button
-  closeButton.onclick = function() {
-    modal.style.display = "none";
-    setGame();  // Start the game after the modal is closed
-  };
 
   // Close the modal when the user clicks the (x)
   spanClose.onclick = function() {
@@ -66,7 +58,6 @@ document.addEventListener("keyup", (e) => {
 document.getElementById("restartButton").addEventListener("click", restartGame);
 
 function restartGame() {
-  console.log("Restarting game...");
 
   resetScore(); // Reset the score using the function in board.js
   document.getElementById("score").innerText = getScore(); // Reset the score display
